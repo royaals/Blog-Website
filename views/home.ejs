@@ -1,0 +1,22 @@
+<%- include('header.ejs') %>
+<div class="home">
+  <h1>Home</h1>
+</div>
+<div class="para">
+  <p class="para-text"><%= homeStartCont %></p>
+</div>
+<div class="home">
+  <h1>Blogs</h1>
+</div>
+<% postCompose.forEach(function(post) { %>
+<div class="home">
+  <h1><%= post.title %></h1>
+</div>
+<div class="para">
+  <p class="para-text">
+    <%= post.content.substring(0, 300) + "..." %>
+    <a href="/posts/<%= post.title %>">Read more</a>
+  </p>
+</div>
+
+<% }) %> <%- include('footer.ejs') %>

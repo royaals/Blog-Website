@@ -1,0 +1,32 @@
+<%-include('header.ejs') %>
+<div class="compose">
+  <h1>Compose</h1>
+  <form class="button" action="/compose" method="post">
+    <div class="form-group">
+      <label>Title</label>
+      <br />
+      <input type="text" class="form-control" id="title" name="postTitle" />
+      <br />
+      <label>Post</label>
+      <br />
+      <textarea
+        class="form form-control"
+        rows="10"
+        cols="40"
+        name="postContent"
+      ></textarea>
+      <br />
+
+      <button
+        type="submit"
+        class="btn btn-primary"
+        role="button"
+        data-bs-toggle="button"
+      >
+        Publish
+      </button>
+    </div>
+  </form>
+</div>
+
+<%-include('footer.ejs') %>
