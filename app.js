@@ -7,6 +7,7 @@ const ejs = require("ejs");
 const app = express();
 const dotenv = require("dotenv");
 dotenv.config();
+const PORT = process.env.PORT || 3000;
 
 const uri = process.env.DATABASE;
 
@@ -97,6 +98,6 @@ app.post("/compose", async (req, res) => {
   await BlogPosts.create(post);
   res.redirect("/");
 });
-app.listen(3000, function () {
-  console.log("Server started on port 3000");
+app.listen(PORT, function () {
+  console.log(`Server started on port ${PORT}`);
 });
