@@ -1,10 +1,10 @@
 {
   "name": "ejs-challenge",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "author": "Royal",
   "license": "ISC",
@@ -19,5 +19,6 @@
     "mongoose": "^7.4.3",
     "parser": "^0.1.4"
   },
+  "devDependencies": {},
   "description": ""
 }
