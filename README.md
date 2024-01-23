@@ -26,7 +26,7 @@ DATABASE=your-mongodb-connection-string
 
 1. Run the application:
 ```bash
-node app.js
+node index.js
 ```
 2. Open your web browser and navigate to `http://localhost:3000` to see the application running.
 
